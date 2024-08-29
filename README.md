@@ -18,8 +18,8 @@ Every interaction and show of support is appreciated!
 </tr>
 <tr>
   <td>1</td>
-  <td></td>
-  <td></td>
-  <td></td>
+  <td>Login Page</td>
+  <td><a href="https://alonsomartinez8.github.io/JS_Projects/1_login_page/">Login Page</a></td>
+  <td><small>Users login page with animations</small></td>
 </tr>
 </table>
