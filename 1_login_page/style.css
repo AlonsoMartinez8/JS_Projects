@@ -26,22 +26,27 @@ main {
 section {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   gap: 1em;
   padding: 1em 2em;
   background: #aaa4;
   border-radius: 1em 0 0 1em;
   backdrop-filter: blur(0.5em);
   -webkit-backdrop-filter: blur(0.5em);
+  transition: border-radius ease 0.3s;
+  transition-delay: 0.3s;
 }
 
 aside {
-    width: 200px;
-    height: 100%;
-    background: url(team.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 0 1em 1em 0;
+  width: 200px;
+  height: 100%;
+  background: url(team.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 1em 1em 0;
+  transition: width ease 0.3s;
 }
 
 h1 {
@@ -63,7 +68,6 @@ form {
 
 fieldset {
   border: 0;
-  position: relative;
 }
 
 input {
@@ -126,4 +130,26 @@ footer {
   gap: 0.5em;
   padding-top: 1em;
   border-top: 1px solid #ccc4;
+}
+
+@media (width<700px) {
+  section {
+    max-width: 300px;
+    border-radius: 1em;
+  }
+  aside {
+    width: 0;
+  }
+  input {
+    width: 80%;
+  }
+  input[type="button"] {
+    margin: 0 auto;
+  }
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
 }
