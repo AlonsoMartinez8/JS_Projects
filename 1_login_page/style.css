@@ -70,16 +70,16 @@ fieldset {
   border: 0;
 }
 
-fieldset div{
+fieldset div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: .4em;
+  gap: 0.4em;
 }
 
 svg {
   cursor: pointer;
-  &.eyeOpen{
+  &.eyeOpen {
     display: none;
   }
 }
@@ -144,6 +144,14 @@ footer {
   gap: 0.5em;
   padding-top: 1em;
   border-top: 1px solid #ccc4;
+}
+
+.passwordValid {
+  border: 1px solid #33cc77;
+}
+
+.passwordInvalid {
+  border: 1px solid #991133;
 }
 
 @media (width<700px) {
