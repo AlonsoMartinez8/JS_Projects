@@ -70,6 +70,20 @@ fieldset {
   border: 0;
 }
 
+fieldset div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .4em;
+}
+
+svg {
+  cursor: pointer;
+  &.eyeOpen{
+    display: none;
+  }
+}
+
 input {
   width: 100%;
   color: white;
