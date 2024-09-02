@@ -135,6 +135,13 @@ a {
   }
 }
 
+small {
+  text-align: center;
+  padding: .4em;
+  outline: 1px solid #ccc4;
+  color: #fff;
+}
+
 footer {
   width: 100%;
   display: flex;
@@ -146,12 +153,12 @@ footer {
   border-top: 1px solid #ccc4;
 }
 
-.passwordValid {
-  border: 1px solid #33cc77;
+.valid {
+  outline: 1px solid #33cc77 !important;
 }
 
-.passwordInvalid {
-  border: 1px solid #991133;
+.invalid {
+  outline: 1px solid #991133 !important;
 }
 
 @media (width<700px) {
