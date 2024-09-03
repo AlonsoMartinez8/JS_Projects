@@ -136,8 +136,9 @@ a {
 }
 
 small {
+  margin-top: 1em;
   text-align: center;
-  padding: .4em;
+  padding: .2em 1em;
   outline: 1px solid #ccc4;
   color: #fff;
 }
@@ -159,6 +160,10 @@ footer {
 
 .invalid {
   outline: 1px solid #991133 !important;
+}
+
+.uncompleted {
+  outline: 1px solid #ed9e6a !important;
 }
 
 @media (width<700px) {
