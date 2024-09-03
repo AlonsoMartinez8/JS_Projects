@@ -49,6 +49,10 @@ aside {
   transition: width ease 0.3s;
 }
 
+header {
+  width: 100%;
+}
+
 h1 {
   color: white;
 }
@@ -62,11 +66,14 @@ p {
 form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 0.5em;
   width: 350px;
 }
 
 fieldset {
+  width: 100%;
   border: 0;
 }
 
@@ -136,6 +143,8 @@ a {
 }
 
 small {
+  width: 100%;
+  font-size: smaller;
   margin-top: 1em;
   text-align: center;
   padding: .2em 1em;
@@ -174,16 +183,7 @@ footer {
   aside {
     width: 0;
   }
-  input {
-    width: 80%;
-  }
-  input[type="button"] {
-    margin: 0 auto;
-  }
-  fieldset {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
+  form {
+    max-width: 100%;
   }
 }
